@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
-
+const PORT = process.env.PORT || 3000; // Use the hosting platform's port, or default to 3000 locally
 // --- 1. SIMULATED DATABASE DATA ---
 // A simple array to simulate a table of names (countries in this case)
 const namesDatabase = [
